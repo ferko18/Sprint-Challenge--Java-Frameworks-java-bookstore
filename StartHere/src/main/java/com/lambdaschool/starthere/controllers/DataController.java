@@ -35,7 +35,7 @@ public class DataController {
         return new ResponseEntity<>(bookService.findAll(pageable), HttpStatus.OK);
     }
 //    GET /authors - returns a JSON object list of all the authors and their books.
-    @ApiOperation(value = "Retrieves a paginated list of all authors", response= Author.class, responseContainer = "List")
+    @ApiOperation(value = "Retrieves list of all authors", response= Author.class, responseContainer = "List")
     @ApiImplicitParams({
            @ApiImplicitParam(name = "page", dataType = "integr", paramType = "query", value = "Results page you want to retrieve (0..N)"),
            @ApiImplicitParam(name = "size", dataType = "integer", paramType = "query", value = "Number of records per page."),
