@@ -10,7 +10,7 @@ import java.util.List;
 
 @Entity
 @Table(name="authors")
-public class Author extends Auditable {
+public class Author  {
     //authorid - long primary key
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
